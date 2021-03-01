@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let user = new Object(); // "object constructor" syntax
+		console.log(user);
+		let user1 = {};  // "object literal" syntax	
+		console.log(user1);
+
+		// Literals and properties
+
+		let dev = { id: 1, 
+					name: 'Fabiano', 
+					age: 31, 
+					job: 'developer', 
+					salary: 4500.00, 
+					status: true, 
+					"likes birds": true
+				};
+
+		console.log(dev); 
+
+		// Square brackets
+		// this would give a syntax error
+		// dev.likes birds = true
+		dev["likes birds"] = false;
+		console.log(dev);
+
+		// Property value shorthand
+
+		function printUsers(name, age) {
+			return {
+			    name: name,
+			    age: age
+			};
+		}
+		console.log(printUsers("John", 12));
+		let user2 = printUsers("Fabiano", 10);
+		console.log(user2.name);
+
+		// We can use both normal properties and shorthands in the same object:
+
+		let user3 = {name: "Carlos", age: 32}; 
+		console.log(user3);
+
+
+		let user4 = {
+			name: "Fabiano", 
+			lastname: "John"
+		}; 
+
+		for (let prop in user4) {
+			console.log(prop);
+		}
+
+		// exercise 01
+
+		let usuario = {name: "John", surname: "Smith"};
+		console.log(usuario);
+		usuario.name = "Pete";
+		console.log(usuario);
+		delete usuario.name;
+		console.log(usuario);	
+
+		// exercise 02 
+
+		let salaries = {
+		 	John: 100,
+		  	Ann: 160,
+		  	Pete: 130
+		}
+
+		console.log(salaries);
+		let sum = 0;
+		for ( let key in salaries ) {
+			sum += salaries[key];
+		}
+		console.log(sum);
+
+
+	</script>
+
+</body>
+</html>

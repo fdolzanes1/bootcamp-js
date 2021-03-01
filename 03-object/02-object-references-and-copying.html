@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let message = "hello";
+		let phrase = message;
+		console.log(phrase);
+
+		let user = { name: "Fabiano", age: 31 };
+		let admin = user;
+		admin.name = "John";
+		console.log(admin);
+
+		// Comparison by reference
+
+		let a = {}; 
+		let b = a; 
+		console.log( a == b ); // => true
+		console.log( a === b );// => true
+
+		let aa = {};
+		let bb = {};
+		console.log( aa == bb ); // => false
+		console.log( aa === bb );// => false
+
+		// Cloning and merging, Object.assign
+
+		let user1 = {
+			name: "John", 
+			age: 30
+		}; 
+
+		let clone = {};
+
+		for ( let key in user1 ) {
+			clone[key] = user1[key];
+		}
+
+		clone.name = "Pete";
+		console.log( clone );
+
+		let perm1 = { job: "developer" }; 
+		let perm2 = { company: "fit" }; 
+		let perm3 = { status: "active" }; 
+
+		Object.assign(user1, perm1, perm2, perm3);
+		console.log(user1);
+
+	</script>
+
+</body>
+</html>

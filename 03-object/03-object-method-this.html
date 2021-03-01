@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// THIS
+		let user = {
+		  name: "John",
+		  age: 30,
+
+		  sayHi() {
+		    // "this" is the "current object"
+		    console.log(this.name);
+		  }
+
+		};
+
+		user.sayHi(); // John
+
+
+		function makeUser() {
+		  return {
+		    name: "John",
+		    ref() {
+		    	return this;
+		    }
+		  };
+		}
+
+		let user3 = makeUser();
+
+		console.log( user3.ref().name ); // What's the result?
+
+
+
+		let calculator = {
+		  
+		  read() {
+		  	this.a = + prompt('a?', 0);
+		  	this.b = + prompt('b?', 0); 
+		  },
+
+		  sum() {
+		  	let result = this.a + this.b
+		  	return this.a+" + "+this.b+" = " + result;
+		  },
+
+		  mul() {
+		  	let result = this.a * this.b;
+		  	return this.a+" x "+this.b+" = " + result;
+		  }
+
+		};
+
+		calculator.read();
+		console.log( calculator.sum() );
+		console.log( calculator.mul() );
+
+
+
+	</script>
+
+</body>
+</html>
