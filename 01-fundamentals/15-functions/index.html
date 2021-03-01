@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	// Functions Declaration 
+	function showHello() {
+		console.log("hello everyone!!");
+	}
+	showHello(); //=> hello everyone!!
+
+
+	// Local variables
+	let userName = 'John';
+	function showMessage() {
+	  let message = 'Hello, ' + userName;
+	  console.log(message);
+	}
+	showMessage(); //=> Hello, John
+
+
+	// Parameters
+	function showMessage(from, text) { // arguments: from, text
+	  console.log(from + ': ' + text);
+	}
+	showMessage('Ann', 'Hello!'); 	  //=> Ann: Hello! (*)
+	showMessage('Ann', "What's up?"); //=> Ann: What's up? (**)
+
+
+	// Returning Value
+	function checkAge(age) {
+	  if (age >= 18) {
+	    return true;
+	  } else {
+	    return confirm('Do you have permission from your parents?');
+	  }
+	}
+
+	let age = prompt('How old are you?', 18);
+	if ( checkAge(age) ) {
+	  alert( 'Access granted' );
+	} else {
+	  alert( 'Access denied' );
+	}
+
+
+
+
+	</script>
+</body>
+</html>

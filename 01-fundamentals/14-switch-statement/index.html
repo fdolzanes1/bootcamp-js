@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	// SWITCH
+
+	let a = 2 + 2;
+
+	switch (a) {
+	  case 2:
+	    console.log( 'Too small' );
+	    break;
+	  case 3:
+	    console.log( 'small' );
+	    break;
+	  case 4:
+	    console.log( 'Exactly!' );
+	    break;
+	  case 5:
+	    console.log( 'Too big' );
+	    break;
+	  default:
+	    console.log( "I don't know such values" );
+	}
+
+
+	// Type Matters
+
+	let arg = prompt("Enter a value?");
+	switch (arg) {
+	  case '0':
+	  case '1':
+	    console.log( 'One or zero' );
+	    break;
+	  case '2':
+	    console.log( 'Two' );
+	    break;
+	  case 3:
+	    console.log( 'Three is Good' );
+	    break;
+	  default:
+	    console.log( 'An unknown value' );
+	}
+
+	</script>
+</body>
+</html>

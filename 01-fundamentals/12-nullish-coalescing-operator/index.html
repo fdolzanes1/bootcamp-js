@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// ?? 
+
+		let user;
+		console.log(user ?? "Anonymous"); //=> Anonymous (user not defined)
+
+		let user1 = "John";
+		console.log(user1 ?? "Anonymous"); //=> John (user defined)
+
+		// ||
+		let firstName = null;
+		let lastName = null;
+		let nickName = "Supercoder";
+
+		// shows the first truthy value:
+		alert(firstName || lastName || nickName || "Anonymous"); // Supercoder
+	</script>
+</body>
+</html>

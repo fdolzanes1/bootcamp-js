@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// Data Types
+		let message = 'hello data types'
+		message = 123456
+		console.log(message) // 123456
+
+		let string = 'Example'
+		console.log(string) // Example
+
+
+		// Number
+		let number = 123456789
+		console.log(number) // 123456789
+
+		let double = 123.4567
+		console.log(double) // 123.4567
+
+		console.log(1 / 0) // Infinity
+		console.log(0 / 1) // 0
+		console.log("not a number" / 2 ); // NaN
+		console.log( "not a number" / 2 + 5 ) // NaN
+
+
+		// BigInt
+		const bigInt = 1234567890123456789012345678901234567890n;
+		console.log(bigInt)
+
+
+		// String
+		let firstName = "Fabiano";
+		let lastName = 'Dolzanes';
+		let phrase = `My name is ${firstName} ${lastName}`;
+		console.log(phrase) // My name is Fabiano Dolzanes
+
+
+		// Boolean (logical type)
+
+		let nameFieldChecked = true
+		let ageFieldChecked = false
+		console.log(nameFieldChecked) // true
+		console.log(ageFieldChecked)  // false
+		
+		let age = 18
+		let isAdult = 22 > age; 
+		console.log(isAdult) // true
+
+
+		// Null
+
+		let age1 = null;
+		console.log(age1)
+
+
+		// undefined value
+		let newage;
+		console.log(newage) // undefined
+		let newage1 = undefined;
+		console.log(newage1) // undefined
+
+
+		// typeof
+		typeof undefined // "undefined"
+		typeof 0 // "number"
+		typeof 10n // "bigint"
+		typeof true // "boolean"
+		typeof "foo" // "string"
+		typeof Symbol("id") // "symbol"
+		typeof Math // "object"  (1)
+		typeof null // "object"  (2)
+		typeof alert // "function"  (3)
+
+		
+	</script>
+</body>
+</html>

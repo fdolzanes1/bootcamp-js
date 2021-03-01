@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let message; 
+		message = 'A new message';
+		console.log(message) // A new message
+
+		let user = 'John', age = '25', job = 'Software Developer', status = false
+		console.log(user, age, job, status) // John 25 Software Developer false
+
+		// variables
+		let username = 'fabiano'
+		let lastname2 = 'dolzanes'
+		console.log(username +' '+ lastname2) // fabiano dolzanes
+
+		let $ = 1;
+		let _ = 2;
+		console.log($ + _) // 3
+
+		//Non-Latin letters are allowed, but NOT RECOMMENDED
+		let имя = 'not permit'
+		console.log(имя) // not permit
+
+
+		// Reserved names
+		// let let = 123123  // ERROR
+		// let return = 'vamos' // ERROR
+
+		// Constants
+		// To declare a constant (unchanging) variable, use const instead of let:
+		// let downcase
+		// const UPPERCASE
+		const MYBIRTHDAY = '13/02/1990'
+		// myBirthday = '07/04/1994' // ERROR
+		console.log(MYBIRTHDAY) // 13/02/1990
+
+		const COLOR_RED = "#F00";
+		const COLOR_GREEN = "#0F0";
+		const COLOR_BLUE = "#00F";
+		const COLOR_ORANGE = "#FF7F00";
+
+		// ...when we need to pick a color
+		let color = COLOR_ORANGE;
+		console.log(color); // #FF7F00
+
+		// Good Practice 
+		/*
+		Some good-to-follow rules are:
+		- Use human-readable names like userName or shoppingCart.
+		- Stay away from abbreviations or short names like a, b, c, unless you really know what you’re doing.
+		- Make names maximally descriptive and concise. Examples of bad names are data and value. Such names say nothing. It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+		- Agree on terms within your team and in your own mind. If a site visitor is called a “user” then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
+		*/
+	</script>
+
+
+</body>
+</html>
