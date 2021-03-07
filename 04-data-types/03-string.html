@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Strings
+
+		// Quotes - Declare string variables
+		let single = 'single-quoted';
+		let double = "double-quoted";
+		let backticks = `backticks`;
+		console.log(single);
+		console.log(double);
+		console.log(backticks);
+
+		// Special characters
+		let guestList = "Guests:\n * John\n * Pete\n * Mary";
+		console.log(guestList); // a multiline list of guests
+
+		// String length
+		let str = "Hello";
+		console.log(str.length); // => 5 
+
+		// Accessing Characters
+		let str1 = `Hello`;
+
+			// the first character
+			console.log( str1[0] ); // H
+			console.log( str1.charAt(0) ); // H
+
+			// the last character
+			console.log( str1[str1.length - 1] ); // of
+
+		// Changing the case 
+		console.log("Interface".toUpperCase());
+		console.log("Interface".toLowerCase());
+
+
+		// Searching for a substring
+
+		let string1 = 'Widget with id';
+		console.log(string1.indexOf("Widget")); // => 0
+		console.log(string1.indexOf("id")); // => 1
+		console.log(string1.indexOf("Id")); // => -1
+
+	</script>
+
+</body>
+</html>

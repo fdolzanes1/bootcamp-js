@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Declaration
+		let arr = new Array(); 
+		let arr1 = []; 
+
+		// 
+		let fruits = ["Apple", "Orange", "Plum"]; 
+		console.log(fruits);
+		console.log(fruits[0]);
+		console.log(fruits[1]);
+		console.log(fruits[2]);
+		fruits[2] = 'Pear'; // => ["Apple", "Orange", "Pear"]
+		console.log(fruits);
+		fruits[3] = "Strawberry"; 
+		console.log(fruits); // => ["Apple", "Orange", "Pear", "Strawberry"]
+
+		console.log(fruits.length); // => 4
+
+		// Pop 
+		fruits.pop(); // remove last element = Strawberry
+		console.log(fruits); // => ["Apple", "Orange", "Pear"]
+
+		// Push 
+		fruits.push("Melon"); // add a element = Melon
+		console.log(fruits); // => ["Apple", "Orange", "Pear", "Melon"]
+
+		// Shift
+		fruits.shift(); // Extracts the first element of the array
+		console.log(fruits); // => ["Orange", "Pear", "Melon"]
+
+		// Unshift
+		fruits.unshift("Watermelon"); // add th element to the beginning of the array
+		console.log(fruits); // => ["Watermelon", "Orange", "Pear", "Melon"]
+
+
+
+	</script>
+
+</body>
+</html>

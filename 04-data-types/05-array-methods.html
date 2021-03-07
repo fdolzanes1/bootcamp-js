@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let arr = ["a", "b", "c", "d", "e"]; 
+		delete arr[1]; // => b
+		console.log(arr.length); // => 5
+
+		// Splice
+		arr.splice(1, 1);
+		console.log(arr); // => ["a", "c", "d", "e"]
+		console.log(arr.length); // => 4
+
+		// Slice
+
+		let arr1 = ["a", "b", "c", "d", "e"]; 
+		console.log(arr1.slice(0,3)); 
+		console.log(arr1.slice(-2));
+
+		// Concat
+
+		console.log(arr1.concat(["f", "g", "h"])); // => ["a", "b", "c", "d", "e", "f", "g", "h"]
+
+		// Searching in Array
+
+			// indexOf
+
+			console.log( arr1.indexOf("a") ); // => 0
+			console.log( arr1.indexOf("b") ); // => 1
+			console.log( arr1.indexOf("c") ); // => 2
+
+			// find and findIndex
+
+			let users = [
+				{id: 1, name: "John"},
+				{id: 2, name: "Marie"},
+				{id: 3, name: "Peter"},
+				{id: 4, name: "Ann"}
+			]; 
+
+			let user = users.find(item => item.id == 1); // => id = 1
+			console.log(user); // => {id: 1, name: "John"}
+
+			// filter
+
+			let someUsers = users.filter(item => item.id < 3);
+			console.log(someUsers);
+
+		// Transform an array
+
+			// map
+
+			let names = ["John","Ann","Peter","Daniel","Edson","Fabiano"];
+
+			let len = names.map(item => item.length);
+			console.log(len);
+
+			let n = names.map(name => name);
+			console.log(n);
+
+			let u = users.map(item => {
+				return item.id+" - "+item.name;
+			});
+			console.log("Transform an array");
+			console.log(u);
+
+		// Converting Arrays to String
+
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		console.log("Converting Arrays to String");
+		console.log(fruits.toString()); //=> Banana,Orange,Apple,Mango
+	</script>
+
+</body>
+</html>
