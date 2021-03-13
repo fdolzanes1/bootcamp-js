@@ -21,3 +21,14 @@ Existem outros métodos que podemos utilizar para manipular nós:
 -   insertBefore(pai, filho): Coloca um nó antes do outro.
 -   replaceChild( elemento1, elemento2): Substitui o nó elemento 1 pelo nó elemento2.
 -   removeChild(elemento): Remove um nó da árvore.
+
+Existe `Element.classList` é uma propriedade somente leitura que retorna uma coleção *DOMTokenList* ativa dos atributos de classe do elemento.
+Usar **classList** é uma alternativa conveniente para acessar a lista de classes de um elemento como uma seqüência delimitada por espaço através de `element.className`. Abaixo alguns métodos: 
+
+ - **add( String [, String] )** Adicione valores de classe especificados. Se essas classes já existem no atributo do elemento, elas são ignoradas.
+ - **remove( String [,String] )** Remover valores de classe específicos.
+ - **item ( Number )** Retorna o valor da classe por índice na coleção.
+ - **contains ( String )** Verifica se o valor da classe especificado existe no atributo de classe do elemento.
+
+
+## Concluir Tarefa
