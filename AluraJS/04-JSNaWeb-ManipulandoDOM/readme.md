@@ -28,7 +28,10 @@ Usar **classList** é uma alternativa conveniente para acessar a lista de classe
  - **add( String [, String] )** Adicione valores de classe especificados. Se essas classes já existem no atributo do elemento, elas são ignoradas.
  - **remove( String [,String] )** Remover valores de classe específicos.
  - **item ( Number )** Retorna o valor da classe por índice na coleção.
+ - **toggle ( String [, force] )** Quando apenas um argumento está presente: Toggle class value; Ou seja, se a classe existir, em seguida, removê-lo e retornar false, se não, então adicioná-lo e retornar true.
  - **contains ( String )** Verifica se o valor da classe especificado existe no atributo de classe do elemento.
 
 
 ## Concluir Tarefa
+
+`Event.target` Uma referência ao objeto que enviou o evento. É diferente de event.currentTarget quando o manipulador de eventos é chamado durante a fase de borbulhagem ou captura do evento.
