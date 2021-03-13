@@ -39,3 +39,7 @@ Usar **classList** é uma alternativa conveniente para acessar a lista de classe
 ## Remover Tarefa
 
 Utilizamos o método `remove`, remove o objeto da árvore a que ele pertence. 
+
+## Projeto Final
+
+![enter image description here](https://raw.githubusercontent.com/fdolzanes1/bootcamp-js/master/AluraJS/04-JSNaWeb-ManipulandoDOM/todo-do-js.jpg)
