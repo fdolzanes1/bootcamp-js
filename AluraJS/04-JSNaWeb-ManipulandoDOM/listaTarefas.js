@@ -27,7 +27,7 @@ const botaoConcluir = () => {
 
 const botaoRemover = () => {
 	const botaoRemovi = document.createElement('button')
-	botaoRemovi.classList.add('delete-button')
+	//botaoRemovi.classList.add('delete-button')
 	botaoRemovi.innerHTML = 'Delete'
 	botaoRemovi.addEventListener('click', removerTarefa)
 	return botaoRemovi
@@ -43,6 +43,6 @@ const concluirTarefa = (event) => {
 const removerTarefa = (event) => {
 	const botaoRemover = event.target
 	const tarefaRemovida = botaoRemover.parentElement
-	tarefaRemovida.classList.remove('list')
-
+	tarefaRemovida.remove()
+	return botaoRemover
 }

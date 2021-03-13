@@ -35,3 +35,7 @@ Usar **classList** é uma alternativa conveniente para acessar a lista de classe
 ## Concluir Tarefa
 
 `Event.target` Uma referência ao objeto que enviou o evento. É diferente de event.currentTarget quando o manipulador de eventos é chamado durante a fase de borbulhagem ou captura do evento.
+
+## Remover Tarefa
+
+Utilizamos o método `remove`, remove o objeto da árvore a que ele pertence. 
