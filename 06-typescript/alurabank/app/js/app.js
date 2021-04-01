@@ -1,3 +1,4 @@
 // app/js/app.js
-let negociacao = new Negociacao(new Date(), 2, 100);
+alert('oii');
+let negociacao = new Negociacao(new Date(), 54, 100);
 console.log(negociacao);
