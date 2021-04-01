@@ -2,9 +2,9 @@
 
 class NegociacaoController {
 
-  private _inputData;
-  private _inputQuantidade;
-  private _inputValor;
+  private _inputData : any;
+  private _inputQuantidade : any;
+  private _inputValor : any;
 
   constructor() {
 
